@@ -28,7 +28,7 @@ export default function Wrapper() {
         />
         <CardFront />
         <CardBack />
-        <div className="desktop:h-[900px] w-full px-[24px]">
+        <div className="w-full px-[24px]">
           {!isSubmitted ? (
             <Form onSubmitSuccess={() => setIsSubmitted(true)} />
           ) : (

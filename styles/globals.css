@@ -20,8 +20,8 @@ html {
   --breakpoint-mobile: 375px;
   --breakpoint-desktop: 1440px;
 
-  --background-image-card-front: url("/assets/images/bg-card-front.png");
-  --background-image-card-back: url("/assets/images/bg-card-back.png");
+  --background-image-card-front: url("/interactive-card/assets/images/bg-card-front.png");
+  --background-image-card-back: url("/interactive-card/assets/images/bg-card-back.png");
 }
 
 @layer components {

@@ -6,7 +6,7 @@ export default function CardBack() {
   const { holder } = useHolder();
   return (
     <div className="desktop:left-[258px] desktop:right-0 desktop:top-[469px] pointer-events-none absolute top-[32px] right-[16px] z-10">
-      <div className="bg-card-back card">
+      <div className="bg-card-back card shadow-xl">
         <div className="px-[35px] py-[72px]">
           <div className="desktop:mt-[40px] desktop:mr-[20px]">
             <div className="flex items-center justify-end">

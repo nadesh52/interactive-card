@@ -15,7 +15,7 @@ export default function CardFront() {
 
   return (
     <div className="desktop:top-[186px] desktop:left-[164px] pointer-events-none absolute top-[126px] left-[16px] z-20">
-      <div className="bg-card-front card">
+      <div className="bg-card-front card shadow-xl">
         <div className="desktop:pt-[28px] desktop:pl-[32px] desktop:pr-[34px] pt-[18px] pr-[22px] pb-[20px] pl-[20px]">
           <div>
             <Image
