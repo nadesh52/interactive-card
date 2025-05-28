@@ -1,1 +1,45 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
+
+html {
+  font-family: var(--font-grotesk);
+  font-size: 18px;
+}
+
+@theme {
+  --font-grotesk: "Space Grotesk", san serif;
+
+  --color-primary-100: oklch(0.5515 0.2532 280.97);
+  --color-primary-200: oklch(0.3882 0.1969 306.13);
+  --color-primary-red: oklch(0.6782 0.2099 24.69);
+
+  --color-secondary-100: oklch(0.8985 0.0029 308.43);
+  --color-secondary-200: oklch(0.7678 0.0164 251.62);
+  --color-secondary-300: oklch(0.2029 0.0748 310.51);
+
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+
+  --background-image-card-front: url("/assets/images/bg-card-front.png");
+  --background-image-card-back: url("/assets/images/bg-card-back.png");
+}
+
+@layer components {
+  .label-title {
+    @apply text-secondary-300 mb-[12px] text-[12px] leading-[9px] font-medium tracking-[2px];
+  }
+  .label-error {
+    @apply text-primary-red mt-[8px] text-[12px] leading-[15px];
+  }
+  .input {
+    @apply placeholder:text-secondary-100 ring-secondary-100 focus-visible:ring-primary-200 h-[43px] rounded-md px-[16px] ring-1 outline-none;
+  }
+
+  .card {
+    @apply desktop:w-[447px] desktop:h-[245px] h-[157px] w-[286px] rounded-md bg-cover;
+  }
+
+  .btn {
+    @apply bg-secondary-300 h-[53px] w-full rounded-md cursor-pointer text-white;
+  }
+}

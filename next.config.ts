@@ -2,7 +2,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/REPO' : '',
+  basePath: isProd ? '/interactive-card' : '',
   trailingSlash: true,
   images: {
     unoptimized: true,
